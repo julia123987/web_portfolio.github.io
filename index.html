@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web-portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div id="menu" class="fixed-action-btn">
+            <a class="btn-floating btn-large green darken-4">
+                <i class="large material-icons">apps</i>
+            </a>
+            <ul>
+                <li id="goHome"><a class="btn-floating tooltipped green lighten-3" data-position="bottom"
+                        data-tooltip="home page"><i class="material-icons">home</i></a></li>
+                <li id="myContact"><a class="btn-floating tooltipped green lighten-1" data-position="bottom"
+                        data-tooltip="contacts"><i class="material-icons">contact_mail</i></a></li>
+                <li id="myProject"><a class="btn-floating tooltipped green" data-position="bottom"
+                        data-tooltip="projects"><i class="material-icons">description</i></a></li>
+                <li id="mySkills"><a class="btn-floating tooltipped green darken-1" data-position="bottom"
+                        data-tooltip="skills"><i class="material-icons">school</i></a></li>
+                <li id="myInfo"><a class="btn-floating tooltipped green darken-3" data-position="bottom"
+                        data-tooltip="education and experience"><i class="material-icons">account_circle</i></a> </li>
+            </ul>
+        </div>
+
+        <div id="mainPage">
+            <div id="part1">
+                <div class="ms-section">
+                    <div id="info">
+                        <h3 id="subCaption">Junior Front-end Developer</h3>
+                        <h1 id="name">I`m Julia Sushko</h1>
+                    </div>
+
+                </div>
+                <div class="ms-section-foto" style="background-color:rgb(9, 121, 70)"><img id="foto" src="" alt="">
+                </div>
+            </div>
+            <div id="part2">
+                <div class="ms-section" style="background-color:rgb(9, 121, 70)">
+                    <div id="moreInfo">
+                        <div id="infoPart1">
+                            <div><span>60+</span> <br> off-line lessons in <br> IT-Step Academy</div>
+                            <div><span>80+</span> <br> hours of teoretical education</div>
+                            <div><span>100+</span> <br> hours of practical training</div>
+                        </div>
+                        <div id="infoPart3">A lot of hours of self-study</div>
+                        <div id="infoPart2">
+                            <div>realisation of interesting projects during course</div>
+                            <div>developing of English writing and reading skills during course</div>
+                            <div>developing of logical mindset during course</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ms-section">
+                    <div id="info">
+                        <h3 id="subCaption">About me</h3>
+                        <p id="aboutMe">I am a goal-oriented person with an analytical mindset, a
+                            desire to realise myself in the field of Front-end Development. <br> I am stress-resistant,
+                            responsible and attentive to my duties. I have a desire to develop, improve my existing
+                            skills and acquire new ones.</p>
+                        <div id="moreDetail">
+                            <div id="detailPart1">
+                                <div><span id="label">Name: </span><span id="detail">Julia Sushko</span></div>
+                                <div><span id="label">Date of birth: </span><span id="detail">21.09.1995</span></div>
+                                <div><span id="label">Address: </span><span id="detail">67, Medova Pechera str. <br>
+                                        79038 Lviv, Ukraine</span></div>
+                            </div>
+                            <div id="detailPart2">
+                                <div><span id="label">Email: </span><span id="detail">julia.sushko.22@gmail.com</span>
+                                </div>
+                                <div><span id="label">Phone: </span><span id="detail">+38(067)851-30-88</span></div>
+                                <div><span id="label">Messanger: </span><span id="detail">WhatsApp, Viber, Telegram <br>
+                                        +38(067)851-30-88</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container" style="font-size: 50%; font-weight: 100; padding: 4px;">
+                    Copyright ©<span class="actualDate"></span> All rights reserved | This template is made by Julia
+                    Sushko
+                </div>
+            </div>
+        </div>
+        <div id="education">
+            <div id="aboutMyEducation">
+                <h3 id="subCaption">Education and experience</h3>
+                <h1 id="caption">MY EDUCATION AND <br> EXPERIENCE</h1>
+            </div>
+            <div id="aboutEduAndExp">
+                <ul class="collapsible" id="mainPartEducation">
+                    <li>
+                        <div class="collapsible-header"><i class="large material-icons">library_books</i>My education
+                        </div>
+                        <div class="collapsible-body">
+                            <h3 id="year">01/09/2013 – 31/12/2018</h3>
+                            <h1 id="degree">Master's degree of 'Finance, Banking and Insurance'</h1>
+                            <h2 id="university"><i class=" tiny material-icons">location_on</i> Ivan Franko National
+                                University of Lviv, Lviv, Ukraine</h2>
+                            <p id="moreAboutEducation">Studied economic and social sciences, fundamentals of economic
+                                analysis, mathematical methods and models, statistics and probability theory, fiscal
+                                administration and customs.</p>
+                            <hr>
+                            <h3 id="year">09/2022 – 09/2023</h3>
+                            <h1 id="degree">Front-end Developer</h1>
+                            <h2 id="university"><i class=" tiny material-icons">location_on</i> Computer IT Step
+                                Academy,
+                                Lviv, Ukraine</h2>
+                            <p id="moreAboutEducation">Studied Web basics, HTML structure (grid layout and flexbox),
+                                formatting using CSS. Bootstrap and Materialize. Git. <br><b><i>JavaScript:</i></b><br>
+                                - object, arrays, String, Date, Math. Fundamentals of object-oriented programming.
+                                Events.
+                                Browser Object Model. Document Object Model. Forms (checking the validity of forms).
+                                Using
+                                cookies, Local storage. Drawing with canvas, support for media capabilities. JSON, AJAX;
+                                <br>
+                                <b><i>jQuery library:</i></b><br> - jQuery events. Styles and animations. Interaction
+                                with DOM. AJAX and
+                                jQuery; <br> <b><i>Basics of Angular and React;</i></b>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">language</i>Language knowledge</div>
+                        <div class="collapsible-body">
+                            <h3 id="year">09/2022 – 01/2023</h3>
+                            <h1 id="degree">English course</h1>
+                            <h2 id="university"><i class=" tiny material-icons">location_on</i>Language School
+                                'GreenForest', Lviv, Ukraine</h2>
+                            <table id="tabLanguage" class="responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Listening</th>
+                                        <th>Reading</th>
+                                        <th>Speaking</th>
+                                        <th>Communication</th>
+                                        <th>Writing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>B1</td>
+                                        <td>B2</td>
+                                        <td>B1</td>
+                                        <td>B1</td>
+                                        <td>B2</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">work</i>My experience</div>
+                        <div class="collapsible-body">
+                            <h3 id="year">09/2016 – 02/2017</h3>
+                            <h1 id="degree">Specialist of the Head Office</h1>
+                            <h2 id="university"><i class=" tiny material-icons">location_on</i>JSC 'Kredobank',
+                                Lviv, Ukraine</h2>
+                            <p id="moreAboutEducation">Worked as a specialist in the credit monitoring department and
+                                credit analysis centre.</p>
+                            <hr>
+                            <h3 id="year">09/2018 – 08/2023</h3>
+                            <h1 id="degree">Specialist of the operational strategies implementation department</h1>
+                            <h2 id="university"><i class=" tiny material-icons">location_on</i>LLC FC 'Credit-Capital',
+                                Lviv, Ukraine</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-copyright" style="position: absolute; bottom: 0;">
+                <div class="container" style="font-size: 50%; width: 100%; font-weight: 100; padding-bottom: 10px;">
+                    Copyright ©<span class="actualDate"></span> All rights reserved | This template is made by Julia
+                    Sushko
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <div id="aboutMySkills">
+                <h3 id="subCaption">Skills</h3>
+                <h1 id="caption">MY SKILLS</h1>
+            </div>
+            <div id="graphics">
+                <div class="html_skills">
+                    <h5>HTML5 - 93%</h5>
+                    <canvas id="myChart1"></canvas>
+                </div>
+                <div class="css_skills">
+                    <h5>CSS3 - 93%</h5>
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <div class="bootstrap_skills">
+                    <h5>Bootstrap - 90%</h5>
+                    <canvas id="myChart3"></canvas>
+                </div>
+                <div class="materialize_skills">
+                    <h5>Materialize - 90%</h5>
+                    <canvas id="myChart4"></canvas>
+                </div>
+                <div class="javaSc_skills">
+                    <h5>Java Script - 70%</h5>
+                    <canvas id="myChart5"></canvas>
+                </div>
+                <div class="jQuery_skills">
+                    <h5 style="text-align: center;">JavaScript library <br> jQuery - 67%</h5>
+                    <canvas id="myChart6"></canvas>
+                </div>
+                <div class="Angular_skills">
+                    <h5 style="text-align: center;">Angular - 30%</h5>
+                    <canvas id="myChart7"></canvas>
+                </div>
+                <div class="React_skills">
+                    <h5 style="text-align: center;">React - 45%</h5>
+                    <canvas id="myChart8"></canvas>
+                </div>
+            </div>
+            <div class="footer-copyright" style="position: relative; bottom: 0;">
+                <div class="container" style="font-size: 50%; width: 100%; font-weight: 100; padding-bottom: 10px;">
+                    Copyright ©<span class="actualDate"></span> All rights reserved | This template is made by Julia
+                    Sushko
+                </div>
+            </div>
+        </div>
+
+        <div id="project">
+            <div id="captionForProjects">
+                <h3 id="subCaption">Projects</h3>
+                <h1 id="caption">MY PROJECTS</h1>
+            </div>
+            <div id="allCases">
+                <div id="case1" class="case">
+                    <img src="./icons/4124802-laptop-laptop-pc-mac-macbook-notebook_113888 (1).png" alt="">
+                    <h3 id="subCaption">Case #1</h3>
+                    <h2 id="caption">Example of adapting template</h2>
+                    <p>A website created using only HTML and CSS.</p>
+                    <a class="waves-effect waves-light btn green darken-1" href="./Template_1/index.html"
+                        target="_blank">Go to project</a>
+                </div>
+                <div id="case2" class="case">
+                    <img src="./icons/4124818-magnifying-search-search-bar-search-screen-web-screen_113910 (2).png"
+                        alt="">
+                    <h3 id="subCaption">Case #2</h3>
+                    <h2 id="caption">Example of adapting template</h2>
+                    <p>An example of a responsive company website template created using HTML, CSS, and JavaScript.
+                    </p>
+                    <a class="waves-effect waves-light btn green darken-1" href="./Template_2/index.html"
+                        target="_blank">Go to project</a>
+                </div>
+                <div id="case3" class="case">
+                    <img src="./icons/4124821-design-template-web-layout-web-page-web-template-website_113903 (1).png"
+                        alt="">
+                    <h3 id="subCaption">Case #3</h3>
+                    <h2 id="caption">Example of adapting template</h2>
+                    <p>An example of a responsive restaurant website template created using HTML, CSS, and JavaScript
+                        (with the ability to add new comments and pagination).</p>
+                    <a class="waves-effect waves-light btn green darken-1" href="./Template_3/index.html"
+                        target="_blank">Go to project</a>
+                </div>
+                <!-- <div id="case4" class="case">
+                    <img src="./icons/4124803-compose-edit-pencil-write-us-writing_113896 (2).png" alt="">
+                    <h3 id="subCaption">Case #4</h3>
+                    <h2 id="caption">Drawing Application</h2>
+                    <p>A drawing application modelled on Paint.</p>
+                    <a class="waves-effect waves-light btn green darken-1" href="./DRAW APLICATION/index.html"
+                        target="_blank">Go to project</a>
+                </div> -->
+            </div>
+            <div class="footer-copyright" style="position: relative; bottom: 0px">
+                <div class="container" style="font-size: 50%; width: 100%; font-weight: 100; padding-bottom: 10px;">
+                    Copyright ©<span class="actualDate"></span> All rights reserved | This template is made by Julia
+                    Sushko
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div id="captionForContact">
+                <div>
+                    <h3 id="subCaption">Contacts</h3>
+                    <h1 id="caption">MY CONTACTS</h1>
+                </div>
+            </div>
+            <div id="moreContactInfo">
+                <div style="text-align: center;"><span id="adress">Address<br></span>
+                    <p id="contactFooterAdress">67, Medova Pechera str. <br> 79038 Lviv, Ukraine</p>
+                </div>
+                <div id="emailFooter" style="text-align: center;"><span id="email">Email<br></span><span>
+                        <p id="contactFooterEmail">julia.sushko.22@gmail.com</p>
+                    </span></div>
+                <div style="text-align: center;"><span id="phone">Phone<br></span>
+                    <p id="contactFooterPhone">+38(067)851-30-88</p>
+                </div>
+            </div>
+            <div id="contactMe">
+                <form action="" id="formForContact">
+                    <div id="userName">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input placeholder="your name..." id="first_name" type="text" class="validate">
+                            <label for="first_name"></label>
+                        </div>
+                    </div>
+                    <div id="userEmail">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input placeholder="your email..." id="email_inline" type="email" class="validate">
+                            <label for="email_inline"></label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        </div>
+                    </div>
+                    <div id="textMessage">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <input placeholder="create message here..." id="textarea" class="materialize-textarea">
+                            <label for="textarea"></label>
+                        </div>
+                    </div>
+                    <a class="waves-effect waves-light btn green darken-4">Send message</a>
+                </form>
+                <div id="followMe">
+                    <h3 id="subCaption">Follow me here</h3>
+                    <div id="social">
+                        <a href=""><img
+                                src="./icons/whatsapp_chat_social_network_media_communication_logo_icon_225430.png"
+                                alt="whatsApp"></a>
+                        <a href="https://www.facebook.com/"><img
+                                src="./icons/social_network_media_fb_facebook_icon_225457.png" alt="facebook"></a>
+                        <a href=""><img src="./icons/team_network_social_media_microsoft_logo_icon_225417.png"
+                                alt="team"></a>
+                        <a href=""><img src="./icons/social_network_media_meta_camera_instagram_icon_225454 (1).png"
+                                alt="instagram"></a>
+                        <a href=""><img src="./icons/telegram_social_network_media_communication_icon_225440.png"
+                                alt="telegram"></a>
+                        <a href=""><img src="./icons/github_git_social_media_network_icon_225451.png" alt="gitHub"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright" style="position: relative; bottom: 0;">
+                <div class="container" style="font-size: 50%; width: 100%; font-weight: 100; padding-bottom: 10px;">
+                    Copyright ©<span class="actualDate"></span> All rights reserved | This template is made by Julia
+                    Sushko
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

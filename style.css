@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
+
+@keyframes go-center{        
+    from { 
+        bottom: -100px; 
+        opacity: 0.2;
+    }            
+    to { bottom: 20px; } 
+}
+@keyframes go-center-education{        
+    from { 
+        bottom: -200px; 
+        opacity: 0.2;
+    }            
+    to { bottom: 0px; } 
+}
+
+@media(min-width: 200px) and (max-width: 767px){
+    #part1, #part2{
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 15px 0 !important;  
+        height: fit-content !important;
+    }
+    .ms-section{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content !important;
+        
+    }
+    .ms-section-foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh !important;
+        width: 100% !important;
+    }
+    .ms-section-foto #foto{
+        height: 100% !important;
+        
+    }
+    #info{
+        padding: 1px !important;
+        height: fit-content!important;
+    }
+
+    #subCaption, #caption, #name{
+        font-size: 150% !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+   
+    #infoPart1 > div, #infoPart2 > div {
+        margin: 2px !important;
+        height: 190px !important;
+        padding: 11px 5px !important;
+        font-size: 70% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    }
+    #infoPart1 > div span, #infoPart2 > div span{
+        font-size: 38px !important;
+    }
+
+
+    #project{
+        height: 100% !important;
+    }
+    #education{
+        height: 100% !important;
+        background-color: white !important;
+    }
+    #allCases{
+        animation: none !important;
+        position: relative;
+        top: 20px !important;
+        padding: 15px 0;
+    }
+    #allCases #caption{
+        font-size: 100% !important;
+    }
+    #contact{
+        height: 100% !important;  
+    }
+    #captionForContact{
+        height: 100% !important; 
+    }
+    #captionForContact h1, #captionForContact h3{
+        color: white !important;   
+    }
+    #captionForContact > div{
+        background-color: transparent !important;
+    }
+    #contactMe{
+        flex-direction: column !important;
+    }
+    #contactMe > form, #contactMe > div{
+        width: 100%;
+        height: 100%;
+        margin: 20px 0;
+    }
+    #moreContactInfo #adress, #moreContactInfo #email, #moreContactInfo #phone{
+        font-size: 65% !important;
+    }
+    #contactFooterAdress, #contactFooterEmail, #contactFooterPhone{
+        font-size: 70% !important;
+    }
+    #allCases > div{
+        width: 250px !important;
+    }   
+}
+@media(min-width: 768px) and (max-width: 992px){
+    
+    /* #part1, #part2{
+        font-size: 60%;
+    } */
+
+    #part1, #part2{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+
+    #subCaption, #caption{
+        font-size: 150%;
+    }
+
+    #allCases{
+        animation: none !important;
+    }
+    #project{
+        height: fit-content !important;
+    }
+    #allCases{
+        animation: none !important;
+        position: relative;
+        top: 20px !important;
+    }
+    #allCases > div{
+        width: 200px !important;
+    }
+    #cssGenerator, #currency, #player, #paint{
+        height: 470px !important;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rowdies', cursive;
+    font-size: 150%; 
+    overflow-y: scroll !important;
+}
+
+#menu{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#menu ul li{
+    width: 24px !important;
+}
+
+#foto{
+    width: auto;
+    height: 100vh;
+}
+.ms-section-foto{
+    width: 50%;
+    height: 100vh;
+}
+#subCaption{
+    font-size: 140%;
+    color: rgb(9, 121, 70);    
+}
+#caption{
+    font-size: 54px;
+    color: rgb(53, 53, 53);
+    line-height: 75px;
+    padding: 17px 0;
+    text-shadow: 5px 5px 5px rgba(53, 53, 53, 0.375);
+}
+#name .new{ 
+    opacity: 0; 
+}
+#name{ 
+    font-size: 96px;
+    display: none;
+    color: rgb(53, 53, 53); 
+}
+#name .div_opacity{
+    -webkit-transition: opacity .7s ease-in-out;
+    -moz-transition: opacity .7s ease-in-out;
+    -ms-transition: opacity .7s ease-in-out;
+    -o-transition: opacity .7s ease-in-out;
+    transition: opacity .7s ease-in-out;
+    opacity: 1;
+}
+
+#mainPage{
+    display: flex;
+    flex-direction: column;
+}
+#part1, #part2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.ms-section{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#aboutMe{
+    font-size: 75%;
+    color: rgba(85, 85, 85, 0.777);
+    font-weight: 100;
+    line-height: 29px;   
+}
+
+#moreDetail{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+#detailPart1 > div #label, #detailPart2 > div #label{
+    font-size: 73%;
+    color: rgba(85, 85, 85, 0.777);
+}
+#detailPart1 > div #detail, #detailPart2 > div #detail{
+    font-size: 70%;
+    color: rgb(9, 121, 70); 
+}
+#moreInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+#moreInfo > div{
+    display: flex;
+    justify-content: center;
+}
+
+#infoPart1 > div, #infoPart2 > div{
+    background-color: white;
+    margin: 5px;
+    width: 27%;
+    height: 180px;
+    padding: 15px 7px;
+    border-radius: 10px;
+    font-size: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(85, 85, 85, 0.777);
+}
+#infoPart3{
+    background-color: white;
+    margin: 5px 25px;
+    padding: 7px 7px;
+    border-radius: 10px;
+    font-size: 75%;
+    text-align: center;
+    color: rgb(40, 172, 113);   
+}
+#infoPart1 > div span{
+    font-size: 54px;
+    color: rgb(9, 121, 70); 
+}
+#info{
+    padding: 0 4px;
+}
+
+#skills{
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0 0 0;
+    background-color: rgba(9, 121, 71, 0.3);
+}
+#skills #subCaption, #skills #caption, #contact #subCaption, #contact #caption, #project #subCaption, #project #caption, #education #subCaption, #education #caption{
+    padding: 0;
+    margin: 0;
+}
+#skills #subCaption, #contact #subCaption, #project #subCaption, #education #subCaption{
+    font-size: 80%;   
+}
+#aboutMySkills, #aboutMyEducation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#graphics{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 15px 0;
+}
+#graphics > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    width: 270px ;
+    height: 270px ;
+    margin: 15px;
+    padding: 25px;
+}
+#graphics > div > h5{
+    font-size: 75%;
+}
+#myChart1, #myChart2, #myChart3, #myChart4, #myChart5, #myChart6{
+    padding: 7px;  
+}
+
+#contact{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#captionForContact{
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+    background-image: url(./pictures/patrick-fore-UxPYxMIDcKU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#captionForContact div{
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+}
+#moreContactInfo{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#moreContactInfo #adress, #moreContactInfo #email, #moreContactInfo #phone{
+    font-size: 75%;
+    color: rgba(85, 85, 85, 0.777);
+}
+#contactFooterAdress, #contactFooterEmail, #contactFooterPhone{
+    font-size: 80%;
+    color: rgb(9, 121, 70); 
+    transition: transform .5s;   
+}
+#contactFooterEmail:hover{
+    cursor: pointer;
+    color: rgb(6, 59, 35);
+    transform: scale(1.05);
+}
+#contactFooterPhone:hover{
+    cursor: pointer;
+    color: rgb(6, 59, 35);
+    transform: scale(1.05);   
+}
+#formForContact{
+    height: 100%;
+    padding: 5px 25px;
+    width: 50%;
+}
+#contactMe{
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+    height: 35%; 
+}
+#followMe{
+    width: 50%;
+    display: flex; 
+    flex-direction: column; 
+    align-items:flex-start;
+    justify-content: center;
+    padding: 5px 25px; 
+}
+#social{
+    padding: 17px 0;
+}
+#social a{
+    padding: 0 15px;
+    transition: transform .5s;
+}
+#social a :hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#followMe #subCaption{
+    font-size: 100%;
+    padding-left: 15px;
+}
+
+#project{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(53, 53, 53, 0.1);
+    padding: 25px 0 0 0;
+}
+#captionForProjects{
+    padding: 0;
+    margin: 0;
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#allCases{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: go-center 2s;
+    bottom: 20px;
+}
+#allCases > div{
+    width: 20%;
+    margin: 10px;
+    width: 21%;
+    padding: 5px;  
+}
+#case1, #case2, #case3, #case4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 470px;
+    background-color: white;
+}
+#case1 #caption, #case2 #caption, #case3 #caption, #case4 #caption{
+    font-size: 100%;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
+    line-height: 27px;
+}
+#case1 #subCaption, #case2 #subCaption, #case3 #subCaption, #case4 #subCaption{
+    font-size: 75%;
+}
+#case1 p, #case2 p, #case3 p, #case4 p{
+    font-size: 65%;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 15px;
+}
+#case1 img, #case2 img, #case3 img, #case4 img{
+    padding: 15px 0;
+}
+#case1:hover{
+    background-color:  rgb(9, 121, 70);
+    color: white;   
+}
+#case1:hover img{
+    filter: invert(100);
+}
+#case1:hover h3{
+    color: white;   
+}
+#case1:hover h2{
+    color: white;   
+}
+#case2:hover{
+    background-color:  rgb(9, 121, 70);
+    color: white;   
+}
+#case2:hover img{
+    filter: invert(100);
+}
+#case2:hover h3{
+    color: white;   
+}
+#case2:hover h2{
+    color: white;   
+}
+#case3:hover{
+    background-color:  rgb(9, 121, 70);
+    color: white;   
+}
+#case3:hover img{
+    filter: invert(100);
+}
+#case3:hover h3{
+    color: white;   
+}
+#case3:hover h2{
+    color: white;   
+}
+#case4:hover{
+    background-color:  rgb(9, 121, 70);
+    color: white;   
+}
+#case4:hover img{
+    filter: invert(100);
+}
+#case4:hover h3{
+    color: white;   
+}
+#case4:hover h2{
+    color: white;   
+}
+
+#education{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(9, 121, 71, 0.3);
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+#mainPartEducation{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: go-center-education 2s;
+    bottom: 0px;
+    z-index: 99;
+}
+#aboutEduAndExp{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: go-center-education 2s;
+    bottom: 0px;
+}
+#mainPartEducation li{
+    width: 100%;
+    background-color: rgb(9, 121, 70);
+    font-size: 80%;
+    font-weight: 100;
+    color: rgb(9, 121, 70);
+}
+#mainPartEducation #year{
+    color:  rgb(3, 36, 21);
+    font-size: 75%;
+    text-align: justify;
+    margin: 3px;
+    font-weight: 100;
+}
+#mainPartEducation #degree{
+    color: white;
+    font-size: 120%;
+    text-align: justify;
+    margin: 7px;
+    font-weight: 200;
+}
+#mainPartEducation #university{
+    color: rgba(255, 255, 255, 0.656);
+    font-size: 90%;
+    text-align: justify;
+    margin: 3px;
+    font-weight: 100;
+}
+#mainPartEducation #moreAboutEducation{
+    color: white;
+    font-size: 80%;
+    text-align: justify;
+    font-weight: 100;
+    margin: 7px;
+}
+#mainPartEducation #tabLanguage tr td, tr th{
+    color: white;
+    font-size: 80%;
+    font-weight: 100;
+    margin: 7px;
+    text-align:center;
+}
+
